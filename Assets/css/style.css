@@ -91,12 +91,200 @@ header nav a:hover {
     }
 
     /* About Me Section Start */
+
+    /* <div class="top">
+    <div class="reinholz"></div>
+    <div class="abo"></div>
+    <div class="ork"></div>
+    <div class="sume"></div> */
+
+    .top {
+        display:flex;
+    }
+    .top div {
+        border: 1px #ccc solid;
+        padding: 10px;
+    }
+
+    .reinholz{
+        flex:4;
+    }
+    .abo {
+        flex:1;
+    }
+    .ork {
+        flex:1;
+    }
+    .tact {
+        flex:1;
+    }
+    .sume {
+        flex:1;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .hero div {
+        border: 1px #ccc solid;
+        padding: 10px;
+        
+    }
+
+    .herobuffer {
+        flex:6
+    }
+
+    .herobox1 {
+        flex:1;
+        
+    }
+
+
+
+
+    .container1{
+        display:flex;
+    }
+    .container1 div {
+        border: 1px #ccc solid;
+        padding: 10px;
+    }
+    .box1 {
+        flex:2;
+
+    }
+
+    .box2 {
+        flex:7;
+
+    }
+
+    .box3 {
+        flex: 0.5;;
+
+    }
+
+    .container2{
+        display:flex;
+    }
+    .container2 div {
+        border: 1px #ccc solid;
+        padding: 10px;
+    }
+    .box4 {
+        flex:2;
+
+    }
+
+    .box5 {
+        flex:7;
+
+    }
+
+    .nest2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }
+    .egg1 {
+        flex:1;
+    }
+
+    .egg2 {
+        flex:1;
+    }
+
+    .nest3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .egg3 {
+        flex:1;
+    }
+    .egg4 {
+        flex:1;
+    }
+
+    .box6 {
+        flex: 0.5;
+
+    }
+
+
+    .bottom {
+        display:flex;
+
+    }
+
+    .bottom div {
+        border: 1px #ccc solid;
+        padding: 10px;
+
+    }
+
+    .findme {
+        flex:1.29;
+
+    }
+
+    .phone {
+        flex:1;
+
+    }
+
+    .email {
+        flex:1;
+
+    }
+
+    .GitHub {
+        flex:1;
+
+    }
+    .linkedin {
+        flex:1;
+
+    }
+    .buffer {
+        flex: 0.5;
+    }
+
+    /* <div class="bottom">
+    <div class="findme">Contact Me</div>
+    <div class="phone">About Me</div>
+    <div class="email">Email</div>
+    <div class="GitHub">GitHub</div>
+    <div class="linkedin">Linkedin</div>
+</div> */
+
+
+
+
+
+
+
+
+.test {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+    
+    
+}
+
 .titlesection {
+    display:flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     padding: 20px;
     color:rgb(185, 136, 156);
     clear:both;
-    float: left;
+    /* float: left; */
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -105,10 +293,11 @@ header nav a:hover {
     font-size: 1.2vw;
     border-right: rgb(129, 118, 201) solid 5px;
     text-align: right;
+    
 }
 
 .about {
-    text-align: center;
+    text-align: left;
     margin-left: 20px;
     width: 75%;
     padding: 20px;
@@ -126,8 +315,10 @@ main {
 .mainproject {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 0;
+    flex: 1 0 1;
     justify-content: flex-end;
+    margin-left: 20px;
+    
 }
 
 .mainproject img{
@@ -137,6 +328,24 @@ main {
     position: relative;
     margin-left: 2%;
     }
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.project img {
+    background-position: 80%;
+    width: 100%;
+    border: rgb(129, 118, 201) solid 5px;
+    position: relative;
+    margin-left: 2%;
+
+}
+
 
 
 
