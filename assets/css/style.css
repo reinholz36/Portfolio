@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: rgb(184, 221, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header Section Start */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 7px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: 80%;
+    border-bottom:rgb(129, 118, 201) solid 5px;
+}
+
+header h1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color:rgb(199, 155, 61);
+    background-color: rgba(238, 255, 238, 0.70);
+    padding: 20px;
+    font-weight: 100;
+    font-size: 58px;
+    margin: 40px 0 40px 0;
+    border-radius: 0 20px 20px 0;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);  
+}
+
+header nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+    margin: 160px 20px 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: rgba(238, 255, 238, 0.70);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5); 
+    
+}
+
+header nav a:hover {
+    background-color: rgba(238, 255, 238, .8);
+    text-shadow: none; 
+    
+}
+/* Header Section End */
+
+/* Hero section Start */
+.hero {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(238, 255, 238, 0.70);
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+    color:rgb(185, 136, 156);
+    padding: 20px 100px 20px  20px;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+    border-bottom:rgb(129, 118, 201) solid 5px;
+}
+/* Hero section End */
+
+/* About Me section Start */
+.aboutsection, .displayflex, .bottom{
+    display:flex;
+}
+
+.aboutsection p {
+    padding: 3%
+}
+
+.aboutsection img {
+    border: rgb(129, 118, 201) solid 5px;
+    border-radius: 30px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.primarysectiontitle {
+    flex:2;
+    margin-left: 5%;
+    width: 75%;
+    padding: 20px;
+    color:rgb(185, 136, 156);
+    clear:both;
+    width: 20%;
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+    font-size: 1.2vw;
+    text-align: right;
+}
+
+.paragraphbox {
+    flex:7;
+}
+
+.aboutrightbuffer {
+    flex: 4.75;
+}
+/* About Me section End */
+
+/* Work section Start */
+ 
+.worktitle {
+    flex:0.8;
+    color:rgb(185, 136, 156);
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+    font-size: 2.0vw;
+    text-align: right;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+.workbox {
+    flex:3;
+}
+
+.mainproject { 
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 100%;
+    padding: 10px;  
+}
+
+.mainproject img {
+    width: 100%;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
+    border: rgba(129, 118, 201, 0.25) solid 5px;
+    border-radius: 30px;
+    position: relative; 
+}
+
+.mainproject img:hover {
+    border: rgba(129, 118, 201, 1) solid 5px;
+}
+
+.labelbox {
+    background-color: rgba(129, 118, 201, 0.75);
+    border-radius: 0 20px 20px 0;
+    position:absolute;
+    padding-right: 18px;
+    margin: 5% 0 5% 0;
+}
+
+h3 {
+    font-size: 1.75vw;  
+}
+
+.mainproject p {
+    font-size: 1.2vw;
+}
+
+.minorproject {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 100%; 
+}
+
+.minorproject img {
+    background-position: 80%;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    border: rgba(129, 118, 201, 0.25) solid 5px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.minorproject img:hover {
+    border: rgba(129, 118, 201, 1) solid 5px;
+    
+}
+
+.minorproject p {
+    font-size: 1vw;
+}
+
+.labelbox2 {
+  
+    background-color: rgba(129, 118, 201, 0.75);
+    border-radius: 0 20px 20px 0;
+    position:absolute;
+    padding-right: 18px;
+    margin: -5% 0 -5% 0;
+}
+
+.labelbox2 h3 {
+    font-size: 1.5vw;
+}
+
+.project {
+    flex: 1;
+    padding: 20px;   
+}
+
+.workrightbuffer {
+    flex: 1;
+} 
+
+.bottom {
+    display:flex;
+
+}
+
+.bottom div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+/* Work section Start */
+
+/* Footer Start*/
+footer {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 7px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-position: 80%;
+    border-top: rgb(129, 118, 201) solid 5px;
+}
+
+footer h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    list-style: none;
+    text-decoration: none;
+    
+    color:rgb(199, 155, 61);
+    background-color: rgba(238, 255, 238, 0.70);
+    padding: 20px;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+    border-radius: 0 20px 20px 0;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+}
+
+footer nav a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+    margin: 4% 0;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: rgba(238, 255, 238, 0.70);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5); 
+}
+
+footer nav a:hover {
+    background-color: rgba(238, 255, 238, .8);
+    text-shadow: none; 
+    }
+/* Footer End*/
