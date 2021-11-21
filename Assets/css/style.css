@@ -1,14 +1,14 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     background-color: rgb(184, 221, 236);
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-    /* Header Section Start */
+/* Header Section Start */
 header {
     background-color: lightgreen;
     display: flex;
@@ -16,25 +16,24 @@ header {
     letter-spacing: 7px;
     background-image: url(../images/background.jpg);
     background-size: cover;
-    background-position: center;
     background-attachment:fixed;
     background-position: 80%;
     border-bottom:rgb(129, 118, 201) solid 5px;
     
-
+    
 }
+
 
 header h1 a {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:rgb(199, 155, 61);
     background-color: rgba(238, 255, 238, 0.70);
-    padding: 40px;
+    padding: 20px;
     font-weight: 100;
     font-size: 58px;
     margin: 40px 0 40px 0;
@@ -46,7 +45,7 @@ header h1 a {
 }
 
 header nav a {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +58,7 @@ header nav a {
     text-decoration: none;
     background-color: rgba(238, 255, 238, 0.70);
     text-shadow: 0 0 5px rgba(0,0,0,0.5); 
+    
 }
 
 header nav a:hover {
@@ -78,7 +78,6 @@ header nav a:hover {
     justify-content: flex-end;
     background-color: rgba(238, 255, 238, 0.70);
     background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px 0 0 20px;
     color:rgb(185, 136, 156);
     padding: 20px 100px 20px  20px;
@@ -90,79 +89,52 @@ header nav a:hover {
     border-bottom:rgb(129, 118, 201) solid 5px;
     }
 
-    /* About Me Section Start */
-
-    /* <div class="top">
-    <div class="reinholz"></div>
-    <div class="abo"></div>
-    <div class="ork"></div>
-    <div class="sume"></div> */
-
-    .top {
-        display:flex;
-    }
-    .top div {
-        border: 1px #ccc solid;
-        padding: 10px;
-    }
-
-    .reinholz{
-        flex:4;
-    }
-    .abo {
-        flex:1;
-    }
-    .ork {
-        flex:1;
-    }
-    .tact {
-        flex:1;
-    }
-    .sume {
-        flex:1;
-    }
-
-    .hero {
-        display: flex;
-    }
-
-    .hero div {
-        border: 1px #ccc solid;
-        padding: 10px;
-        
-    }
-
-    .herobuffer {
-        flex:6
-    }
-
-    .herobox1 {
-        flex:1;
-        
-    }
-
-
-
-
     .container1{
         display:flex;
     }
     .container1 div {
-        border: 1px #ccc solid;
-        padding: 10px;
+        /* border: 1px #ccc solid;
+        padding: 3%; */
+    }
+
+    .container1 p {
+    padding: 3%
+    }
+
+    .container1 img {
+    border: rgb(129, 118, 201) solid 5px;
+    border-radius: 30px;
+    height: 200px;
+    max-width: 100%;
+    
     }
     .box1 {
         flex:2;
+        text-align: left;
+        margin-left: 5%;
+        width: 75%;
+        padding: 20px;
+        color:rgb(185, 136, 156);
+        clear:both;
+        width: 20%;
+        letter-spacing: 6px;
+        text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+        font-size: 1.2vw;
+        /* border-right: rgb(129, 118, 201) solid 5px; */
+        text-align: right;
 
     }
 
     .box2 {
         flex:7;
+        
 
     }
 
+    
+
     .box3 {
-        flex: 0.5;;
+        flex: 4.75;
 
     }
 
@@ -170,27 +142,148 @@ header nav a:hover {
         display:flex;
     }
     .container2 div {
-        border: 1px #ccc solid;
-        padding: 10px;
+        /* border: 1px #ccc solid;
+        padding: 5px; */
     }
     .box4 {
-        flex:2;
+        flex:0.8;
+        color:rgb(185, 136, 156);
+        letter-spacing: 6px;
+        text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+        font-size: 2.0vw;
+        text-align: right;
+        padding-top: 3%;
+        padding-right: 3%;
+    
+
 
     }
+
 
     .box5 {
-        flex:7;
+        flex:3;
 
     }
+    .nest1 { 
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+        width: 100%;
+        /* border-left: rgb(129, 118, 201) solid 5px; */
+        /* border: rgb(129, 118, 201) solid 5px; */
+        /* align-content: center; */
+        padding: 10px;
+           
+    
+       
+    }
+
+.nest1 img {
+    /* background-position: 80%; */
+    width: 100%;
+    min-width: 400px;
+    max-width: 600px;
+    border: rgba(129, 118, 201, 0.5) solid 5px;
+    border-radius: 30px;
+    position: relative;
+    
+    
+    }
+
+.nest1 img:hover {
+    border: rgba(129, 118, 201, 1) solid 5px;
+    
+    }
+
+
+.labelbox {
+  
+    background-color: rgba(129, 118, 201, 0.50);
+    border-radius: 0 20px 20px 0;
+    position:absolute;
+    padding-right: 18px;
+    /* margin-top: 11vw; */
+    margin: 5% 0 5% 0;
+}
+
+    h3 {
+        font-size: 1.75vw;
+        
+      
+        
+    }
+
+    .nest1 p {
+        font-size: 1.2vw;
+      
+
+    }
+
+    
 
     .nest2 {
         display: flex;
         flex-wrap: wrap;
+        height: 400px;
+        width: 100%;
+        /* border-left: rgb(129, 118, 201) solid 5px; */
+        margin-bottom: -200px;
+        
+        
+        
+    
+        
         
 
     }
+
+    .nest2 img {
+        background-position: 80%;
+        width: 100%;
+        min-width: 300px;
+        max-width: 400px;
+        border: rgba(129, 118, 201, 0.5) solid 5px;
+        border-radius: 30px;
+        position: relative;
+        margin-left: -5px;
+    }
+
+    .nest2 img:hover {
+        border: rgba(129, 118, 201, 1) solid 5px;
+    }
+
+
+    .nest2 p {
+    font-size: 1vw;
+
+}
+
+.labelbox2 {
+  
+    background-color: rgba(129, 118, 201, 0.50);
+    border-radius: 0 20px 20px 0;
+    position:absolute;
+    padding-right: 18px;
+    margin-top: 11vw;
+    margin: -5% 0 -5% 0;
+    
+}
+
+.labelbox2 h3 {
+    font-size: 1.5vw;
+    
+  
+    
+}
+
+
+  
+
+
+    
     .egg1 {
         flex:1;
+        
     }
 
     .egg2 {
@@ -206,10 +299,11 @@ header nav a:hover {
     }
     .egg4 {
         flex:1;
+        
     }
 
     .box6 {
-        flex: 0.5;
+        flex: 1;
 
     }
 
@@ -222,6 +316,7 @@ header nav a:hover {
     .bottom div {
         border: 1px #ccc solid;
         padding: 10px;
+        
 
     }
 
@@ -252,13 +347,7 @@ header nav a:hover {
         flex: 0.5;
     }
 
-    /* <div class="bottom">
-    <div class="findme">Contact Me</div>
-    <div class="phone">About Me</div>
-    <div class="email">Email</div>
-    <div class="GitHub">GitHub</div>
-    <div class="linkedin">Linkedin</div>
-</div> */
+
 
 
 
@@ -277,24 +366,7 @@ header nav a:hover {
     
 }
 
-.titlesection {
-    display:flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    padding: 20px;
-    color:rgb(185, 136, 156);
-    clear:both;
-    /* float: left; */
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 6px;
-    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
-    font-size: 1.2vw;
-    border-right: rgb(129, 118, 201) solid 5px;
-    text-align: right;
-    
-}
+
 
 .about {
     text-align: left;
@@ -305,46 +377,10 @@ header nav a:hover {
 }
     /* Work Section Start*/
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2%;
-}
 
 
-.mainproject {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 1;
-    justify-content: flex-end;
-    margin-left: 20px;
-    
-}
 
-.mainproject img{
-   background-position: 80%;
-    width: 75%;
-    border: rgb(129, 118, 201) solid 5px;
-    position: relative;
-    margin-left: 2%;
-    }
 
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 0;
-    justify-content: flex-end;
-    margin-left: 20px;
-}
-
-.project img {
-    background-position: 80%;
-    width: 100%;
-    border: rgb(129, 118, 201) solid 5px;
-    position: relative;
-    margin-left: 2%;
-
-}
 
 
 
@@ -372,7 +408,7 @@ footer h2 {
     align-self: flex-start;
     list-style: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     color:rgb(199, 155, 61);
     background-color: rgba(238, 255, 238, 0.70);
     padding: 20px;
