@@ -8,8 +8,11 @@ body {
     background-color: rgb(184, 221, 236);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /* Header Section Start */
 header {
+    display: flex;
+    flex-wrap: wrap;
     background-color: lightgreen;
     display: flex;
     justify-content: space-between;
@@ -19,14 +22,10 @@ header {
     background-attachment:fixed;
     background-position: 80%;
     border-bottom:rgb(129, 118, 201) solid 5px;
-    
-    
 }
-
 
 header h1 a {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -38,19 +37,14 @@ header h1 a {
     font-size: 58px;
     margin: 40px 0 40px 0;
     border-radius: 0 20px 20px 0;
-    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
-    
-    
-    
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);  
 }
 
 header nav a {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    height: 22%;
     font-size: 20px;
     padding: 15px;
     margin: 160px 20px 10px 20px;
@@ -66,12 +60,13 @@ header nav a:hover {
     text-shadow: none; 
     
 }
-    /* Hero section Start */
+/* Header Section End */
+
+/* Hero section Start */
 .hero {
     display: flex;
     justify-content: flex-end;
-    }
-
+}
 
 .hero h2 {
     display: flex;
@@ -87,25 +82,26 @@ header nav a:hover {
     letter-spacing: 3px;
     text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
     border-bottom:rgb(129, 118, 201) solid 5px;
-    }
+}
+/* Hero section End */
 
-.container1{
+/* About Me section Start */
+.aboutsection{
     display:flex;
-    }
-  
+}
 
-.container1 p {
+.aboutsection p {
     padding: 3%
-    }
+}
 
-.container1 img {
+.aboutsection img {
     border: rgb(129, 118, 201) solid 5px;
     border-radius: 30px;
     height: 200px;
     max-width: 100%;
-    }
+}
 
-.box1 {
+.primarysectiontitle {
     flex:2;
     margin-left: 5%;
     width: 75%;
@@ -117,205 +113,141 @@ header nav a:hover {
     text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
     font-size: 1.2vw;
     text-align: right;
+}
 
-    }
+.paragraphbox {
+    flex:7;
+}
 
-    .box2 {
-        flex:7;
-        
+.aboutrightbuffer {
+    flex: 4.75;
+}
+/* About Me section End */
 
-    }
-
-    
-
-    .box3 {
-        flex: 4.75;
-
-    }
-
-    .container2{
-        display:flex;
-    }
+/* Work section Start */
+.container2{
+    display:flex;
+}
  
-    .box4 {
-        flex:0.8;
-        color:rgb(185, 136, 156);
-        letter-spacing: 6px;
-        text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
-        font-size: 2.0vw;
-        text-align: right;
-        padding-top: 3%;
-        padding-right: 3%;
-    
+.box4 {
+    flex:0.8;
+    color:rgb(185, 136, 156);
+    letter-spacing: 6px;
+    text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+    font-size: 2.0vw;
+    text-align: right;
+    padding-top: 3%;
+    padding-right: 3%;
+}
 
+.box5 {
+    flex:3;
+}
 
-    }
-
-
-    .box5 {
-        flex:3;
-
-    }
-    .nest1 { 
-        display: flex;
-        flex-wrap: wrap;
-        height: 400px;
-        width: 100%;
-        padding: 10px;
-           
-    
-       
-    }
+.nest1 { 
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 100%;
+    padding: 10px;  
+}
 
 .nest1 img {
     width: 100%;
-    min-width: 400px;
+    min-width: 600px;
     max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
     border: rgba(129, 118, 201, 0.5) solid 5px;
     border-radius: 30px;
-    position: relative;
-    
-    
-    }
+    position: relative; 
+}
 
 .nest1 img:hover {
     border: rgba(129, 118, 201, 1) solid 5px;
-    
-    }
-
+}
 
 .labelbox {
-  
-    background-color: rgba(129, 118, 201, 0.50);
+    background-color: rgba(129, 118, 201, 0.75);
     border-radius: 0 20px 20px 0;
     position:absolute;
     padding-right: 18px;
     margin: 5% 0 5% 0;
 }
 
-    h3 {
-        font-size: 1.75vw;
-        
-      
-        
-    }
+h3 {
+    font-size: 1.75vw;  
+}
 
-    .nest1 p {
-        font-size: 1.2vw;
-      
+.nest1 p {
+    font-size: 1.2vw;
+}
 
-    }
+.nest2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 100%; 
+}
 
-    
+.nest2 img {
+    background-position: 80%;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    border: rgba(129, 118, 201, 0.5) solid 5px;
+    border-radius: 30px;
+    position: relative;
+}
 
-    .nest2 {
-        display: flex;
-        flex-wrap: wrap;
-        height: 400px;
-        width: 100%;
-        margin-bottom: -200px;
-    }
-
-    .nest2 img {
-        background-position: 80%;
-        width: 100%;
-        min-width: 300px;
-        max-width: 400px;
-        border: rgba(129, 118, 201, 0.5) solid 5px;
-        border-radius: 30px;
-        position: relative;
-        margin-left: -5px;
-    }
-
-    .nest2 img:hover {
-        border: rgba(129, 118, 201, 1) solid 5px;
-    }
+.nest2 img:hover {
+    border: rgba(129, 118, 201, 1) solid 5px;
+}
 
 
-    .nest2 p {
+.nest2 p {
     font-size: 1vw;
-
 }
 
 .labelbox2 {
   
-    background-color: rgba(129, 118, 201, 0.50);
+    background-color: rgba(129, 118, 201, 0.75);
     border-radius: 0 20px 20px 0;
     position:absolute;
     padding-right: 18px;
-    margin-top: 11vw;
     margin: -5% 0 -5% 0;
-    
 }
 
 .labelbox2 h3 {
     font-size: 1.5vw;
-    
-  
-    
+}
+
+.project {
+    flex:1;
+    padding: 20px;   
 }
 
 
-  
+.box6 {
+    flex: 1;
+} 
 
 
-    
-    .egg1 {
-        flex:1;
-        
-    }
-
-    .egg2 {
-        flex:1;
-    }
-
-  
-    .egg3 {
-        flex:1;
-    }
-    .egg4 {
-        flex:1;
-        
-    }
-
-    .box6 {
-        flex: 1;
-
-    }
-
-
-    .bottom {
-        display:flex;
-
-    }
-
-    .bottom div {
-        border: 1px #ccc solid;
-        padding: 10px;
-        
-
-    }
-
-.about {
-    text-align: left;
-    margin-left: 20px;
-    width: 75%;
-    padding: 20px;
+.bottom {
+    display:flex;
 
 }
-    /* Work Section Start*/
 
+.bottom div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+/* Work section Start */
 
-
-
-
-
-
-
-
-
-
-    /* Footer Start*/
+/* Footer Start*/
 footer {
     background-color: lightgreen;
     display: flex;
@@ -366,5 +298,5 @@ footer nav a {
 footer nav a:hover {
     background-color: rgba(238, 255, 238, .8);
     text-shadow: none; 
-        
     }
+/* Footer End*/
