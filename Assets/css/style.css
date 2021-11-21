@@ -86,7 +86,7 @@ header nav a:hover {
 /* Hero section End */
 
 /* About Me section Start */
-.aboutsection{
+.aboutsection, .displayflex, .bottom{
     display:flex;
 }
 
@@ -125,11 +125,8 @@ header nav a:hover {
 /* About Me section End */
 
 /* Work section Start */
-.container2{
-    display:flex;
-}
  
-.box4 {
+.worktitle {
     flex:0.8;
     color:rgb(185, 136, 156);
     letter-spacing: 6px;
@@ -140,11 +137,11 @@ header nav a:hover {
     padding-right: 3%;
 }
 
-.box5 {
+.workbox {
     flex:3;
 }
 
-.nest1 { 
+.mainproject { 
     display: flex;
     flex-wrap: wrap;
     height: 400px;
@@ -152,18 +149,18 @@ header nav a:hover {
     padding: 10px;  
 }
 
-.nest1 img {
+.mainproject img {
     width: 100%;
     min-width: 600px;
     max-width: 600px;
     min-height: 300px;
     max-height: 300px;
-    border: rgba(129, 118, 201, 0.5) solid 5px;
+    border: rgba(129, 118, 201, 0.25) solid 5px;
     border-radius: 30px;
     position: relative; 
 }
 
-.nest1 img:hover {
+.mainproject img:hover {
     border: rgba(129, 118, 201, 1) solid 5px;
 }
 
@@ -179,18 +176,18 @@ h3 {
     font-size: 1.75vw;  
 }
 
-.nest1 p {
+.mainproject p {
     font-size: 1.2vw;
 }
 
-.nest2 {
+.minorproject {
     display: flex;
     flex-wrap: wrap;
     height: 250px;
     width: 100%; 
 }
 
-.nest2 img {
+.minorproject img {
     background-position: 80%;
     width: 100%;
     height: 100%;
@@ -198,17 +195,17 @@ h3 {
     max-width: 400px;
     min-height: 200px;
     max-height: 200px;
-    border: rgba(129, 118, 201, 0.5) solid 5px;
+    border: rgba(129, 118, 201, 0.25) solid 5px;
     border-radius: 30px;
     position: relative;
 }
 
-.nest2 img:hover {
+.minorproject img:hover {
     border: rgba(129, 118, 201, 1) solid 5px;
+    
 }
 
-
-.nest2 p {
+.minorproject p {
     font-size: 1vw;
 }
 
@@ -226,15 +223,13 @@ h3 {
 }
 
 .project {
-    flex:1;
+    flex: 1;
     padding: 20px;   
 }
 
-
-.box6 {
+.workrightbuffer {
     flex: 1;
 } 
-
 
 .bottom {
     display:flex;
@@ -260,7 +255,6 @@ footer {
     background-position: 80%;
     border-top: rgb(129, 118, 201) solid 5px;
 }
-
 
 footer h2 {
     display: flex;
