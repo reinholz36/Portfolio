@@ -1,3 +1,7 @@
+:root {
+ --bordercolor: rgba(129, 118, 201, 0.75) solid 5px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +18,25 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-color: lightgreen;
-    display: flex;
     justify-content: space-between;
     letter-spacing: 7px;
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment:fixed;
     background-position: 80%;
-    border-bottom:rgb(129, 118, 201) solid 5px;
+    border-bottom:var(--bordercolor);
+}
+
+.name{
+    flex: 1;
+}
+
+.navigation{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 header h1 a {
@@ -47,7 +62,7 @@ header nav a {
     list-style: none;
     font-size: 20px;
     padding: 15px;
-    margin: 160px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
     border-radius: 8px;
     text-decoration: none;
     background-color: rgba(238, 255, 238, 0.70);
@@ -81,7 +96,7 @@ header nav a:hover {
     font-size: 20px;
     letter-spacing: 3px;
     text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
-    border-bottom:rgb(129, 118, 201) solid 5px;
+    border-bottom:var(--bordercolor);
 }
 /* Hero section End */
 
@@ -95,7 +110,7 @@ header nav a:hover {
 }
 
 .aboutsection img {
-    border: rgb(129, 118, 201) solid 5px;
+    border: var(--bordercolor);
     border-radius: 30px;
     height: 200px;
     max-width: 100%;
@@ -144,9 +159,13 @@ header nav a:hover {
 .mainproject { 
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    height: 300px;
     width: 100%;
     padding: 10px;  
+}
+
+.mainproject:hover {
+    opacity: 0.5;
 }
 
 .mainproject img {
@@ -155,13 +174,9 @@ header nav a:hover {
     max-width: 600px;
     min-height: 300px;
     max-height: 300px;
-    border: rgba(129, 118, 201, 0.25) solid 5px;
+    border: var(--bordercolor);
     border-radius: 30px;
     position: relative; 
-}
-
-.mainproject img:hover {
-    border: rgba(129, 118, 201, 1) solid 5px;
 }
 
 .labelbox {
@@ -169,21 +184,22 @@ header nav a:hover {
     border-radius: 0 20px 20px 0;
     position:absolute;
     padding-right: 18px;
-    margin: 5% 0 5% 0;
+    margin: -10% 0 -10% 0;
 }
 
 h3 {
     font-size: 1.75vw;  
+    color: black;
 }
 
 .mainproject p {
     font-size: 1.2vw;
+    color:black
 }
 
 .minorproject {
     display: flex;
     flex-wrap: wrap;
-    height: 250px;
     width: 100%; 
 }
 
@@ -195,14 +211,9 @@ h3 {
     max-width: 400px;
     min-height: 200px;
     max-height: 200px;
-    border: rgba(129, 118, 201, 0.25) solid 5px;
+    border: var(--bordercolor);
     border-radius: 30px;
     position: relative;
-}
-
-.minorproject img:hover {
-    border: rgba(129, 118, 201, 1) solid 5px;
-    
 }
 
 .minorproject p {
@@ -210,12 +221,11 @@ h3 {
 }
 
 .labelbox2 {
-  
     background-color: rgba(129, 118, 201, 0.75);
     border-radius: 0 20px 20px 0;
     position:absolute;
     padding-right: 18px;
-    margin: -5% 0 -5% 0;
+    margin: -7% 0 -7% 0;
 }
 
 .labelbox2 h3 {
@@ -227,62 +237,74 @@ h3 {
     padding: 20px;   
 }
 
+.project:hover {
+    opacity: 0.5;
+}
+
 .workrightbuffer {
     flex: 1;
 } 
 
 .bottom {
     display:flex;
-
 }
 
 .bottom div {
-    border: 1px #ccc solid;
     padding: 10px;
 }
 /* Work section Start */
 
 /* Footer Start*/
 footer {
-    background-color: lightgreen;
     display: flex;
+    flex-wrap: wrap;
+    background-color: lightgreen;
     justify-content: space-between;
     letter-spacing: 7px;
     background-image: url(../images/background.jpg);
     background-size: cover;
-    background-position: center;
     background-attachment:fixed;
     background-position: 80%;
-    border-top: rgb(129, 118, 201) solid 5px;
+    border-top: var(--bordercolor);
 }
 
-footer h2 {
+.contactsection {
+    flex: 1;
+}
+
+.contactnavigation{
+    flex: 3;
     display: flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer h2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-decoration: none;
-    
     color:rgb(199, 155, 61);
     background-color: rgba(238, 255, 238, 0.70);
     padding: 20px;
     font-weight: 100;
     font-size: 30px;
-    margin: 30px 0 20px 0;
+    margin: 20px 0 20px 0;
     border-radius: 0 20px 20px 0;
     text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
 }
 
+
 footer nav a {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-self: center;
-    align-items: center;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     list-style: none;
     font-size: 20px;
     padding: 15px;
-    margin: 4% 0;
+    margin: 10px 20px 10px 20px;
     border-radius: 8px;
     text-decoration: none;
     background-color: rgba(238, 255, 238, 0.70);

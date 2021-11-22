@@ -10,11 +10,15 @@
 <body>
     <!-- Header Section -->
     <header>
-        <h1><a href="/">Reinholz</a></h1>
-        <nav><a href="#aboutme">About Me</a></nav>
-        <nav><a href="#work">Work</a></nav>
-        <nav><a href="#contact">Contact</a></nav>
-        <nav><a href="https://drive.google.com/file/d/1gtWAvrJMdaaVz2IGYEa7To94Yz55iDSK/view?usp=sharing" title="Go to Resume" rel="noopener" target="_blank">Resume</a></nav>
+        <div class="name">
+            <h1><a href="/">Reinholz</a></h1>
+        </div>
+        <div class="navigation">
+            <nav><a href="#aboutme">About Me</a></nav>
+            <nav><a href="#work">Work</a></nav>
+            <nav><a href="#contact">Contact</a></nav>
+            <nav><a href="https://drive.google.com/file/d/1gtWAvrJMdaaVz2IGYEa7To94Yz55iDSK/view?usp=sharing" title="Go to Resume" rel="noopener" target="_blank">Resume</a></nav>
+        </div>
     </header>
     <!-- Hero section -->
 
@@ -40,6 +44,7 @@
         <div class="aboutrightbuffer"></div>
     </section>
     
+    <!-- break between sections -->
     <div class="bottom">
         <div class="buffer"></div>
     </div>
@@ -48,56 +53,61 @@
     <div class="displayflex">
         <h2 class="worktitle" id="work">Work</h2>
         <div class="workbox">
-            <div class="mainproject">
+            <section class="mainproject">
                 <a href="https://reinholz36.github.io/run-buddy/" title="Go to Run Buddy website" rel="noopener" target="_blank">
                     <img src="./assets/images/runbuddy.jpg" alt="">
+                    <div class="labelbox">
+                        <h3>Run-Buddy</h3>
+                        <p>HTML/CSS</p>
+                    </div>
                 </a>
-                <div class="labelbox">
-                    <h3>Run-Buddy</h3>
-                    <p>HTML/CSS</p>
-                </div>
-            </div>
+            </section>
+
+    <!-- break between sections -->
+    <div class="bottom">
+        <div class="buffer"></div>
+    </div>
             
             <div class="minorproject">
-                <div class="project">
+                <section class="project">
                     <a href="https://reinholz36.github.io/run-buddy/" title="Go to Run Buddy website" rel="noopener" target="_blank">
                         <img src="./assets/images/project3.jpg" alt="">
+                        <div class="labelbox2">
+                            <h3>Project Name</h3>
+                            <p>Code Type</p>
+                        </div>
                     </a>
-                    <div class="labelbox2">
-                        <h3>Project Name</h3>
-                        <p>Code Type</p>
-                    </div>
-                </div>
-                <div class="project">
+                </section>
+                <section class="project">
                     <a href="https://reinholz36.github.io/run-buddy/" title="Go to Run Buddy website" rel="noopener" target="_blank">
                         <img src="./assets/images/project3.jpg" alt="">
+                        <div class="labelbox2">
+                            <h3>Project Name</h3>
+                            <p>Code Type</p>
+                        </div>
                     </a>
-                    <div class="labelbox2">
-                        <h3>Project Name</h3>
-                        <p>Code Type</p>
-                    </div>
-                </div>
+                </section>
             </div>
 
             <div class="minorproject">
-                <div class="project">
+                <section class="project">
                     <a href="https://reinholz36.github.io/run-buddy/" title="Go to Run Buddy website" rel="noopener" target="_blank">
                         <img src="./assets/images/project3.jpg" alt="">
+                        <div class="labelbox2">
+                            <h3>Project Name</h3>
+                            <p>Code Type</p>
+                        </div>
                     </a>
-                    <div class="labelbox2">
-                        <h3>Project Name</h3>
-                        <p>Code Type</p>
-                    </div>
-                </div>
-                <div class="project">
+                </section>
+                <section class="project">
                     <a href="https://reinholz36.github.io/run-buddy/" title="Go to Run Buddy website" rel="noopener" target="_blank">
                         <img src="./assets/images/project3.jpg" alt="">
+                        <div class="labelbox2">
+                            <h3>Project Name</h3>
+                            <p>Code Type</p>
+                        </div>
                     </a>
-                    <div class="labelbox2">
-                        <h3>Project Name</h3>
-                        <p>Code Type</p>
-                    </div>
-                </div>
+                </section>
             </div> 
         </div>
         <div class="workrightbuffer"></div>
@@ -109,15 +119,15 @@
     
     <!-- Contact Me/Footer-->
     <footer>
-        <h2 id="contact">Contact Me</h2>
-        
-        <nav>
-            <a href="">(919) 943-2921</a>
-            <a href="mailto:dreinholz28@gmail.com" title="Go to email Dani Reinholz">dreinholz28@gmail.com</a>
-            <a href="https://github.com/reinholz36" title="Go to Dani Reinholz GitHub profile" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/dreinholz/" title="Go to Dani Reinholz Linkedin profile" target="_blank" rel="noopener">Linkedin</a>
-        </nav>
-
+        <div class="contactsection">
+            <h2 id="contact">Contact Me</h2>
+        </div>
+        <div class="contactnavigation">    
+            <nav><a href="">(919) 943-2921</a></nav>
+            <nav><a href="mailto:dreinholz28@gmail.com" title="Go to email Dani Reinholz">dreinholz28@gmail.com</a></nav>
+            <nav><a href="https://github.com/reinholz36" title="Go to Dani Reinholz GitHub profile" target="_blank" rel="noopener">GitHub</a></nav>
+            <nav><a href="https://www.linkedin.com/in/dreinholz/" title="Go to Dani Reinholz Linkedin profile" target="_blank" rel="noopener">Linkedin</a></nav>
+        </div>
     </footer> 
 </body>
 </html>
