@@ -275,12 +275,13 @@ footer {
 .contactnavigation{
     flex: 3;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-footer h2 a {
+footer h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,3 +317,7 @@ footer nav a:hover {
     text-shadow: none; 
     }
 /* Footer End*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
+(NOTE: ALWAYS HAVE THIS SECTION LAST) */
+
