@@ -89,7 +89,7 @@ header nav a:hover {
     background-color: rgba(238, 255, 238, 0.70);
     background-size: cover;
     border-radius: 20px 0 0 20px;
-    color:rgb(185, 136, 156);
+    color:rgb(134, 99, 114);
     padding: 20px 100px 20px  20px;
     margin-top: 20px;
     font-weight: 100;
@@ -103,6 +103,7 @@ header nav a:hover {
 /* About Me section Start */
 .aboutsection, .displayflex, .bottom{
     display:flex;
+    flex-wrap: wrap;
 }
 
 .aboutsection p {
@@ -121,7 +122,7 @@ header nav a:hover {
     margin-left: 5%;
     width: 75%;
     padding: 20px;
-    color:rgb(185, 136, 156);
+    color:rgb(134 99 114);
     clear:both;
     width: 20%;
     letter-spacing: 6px;
@@ -143,13 +144,12 @@ header nav a:hover {
  
 .worktitle {
     flex:0.8;
-    color:rgb(185, 136, 156);
+    color:rgb(134, 99, 114);
     letter-spacing: 6px;
     text-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
     font-size: 2.0vw;
     text-align: right;
-    padding-top: 3%;
-    padding-right: 3%;
+    padding: 3%;
 }
 
 .workbox {
@@ -192,7 +192,7 @@ h3 {
     color: black;
 }
 
-.mainproject p {
+.codetype p {
     font-size: 1.2vw;
     color:black
 }
@@ -216,9 +216,6 @@ h3 {
     position: relative;
 }
 
-.minorproject p {
-    font-size: 1vw;
-}
 
 .labelbox2 {
     background-color: rgba(129, 118, 201, 0.75);
@@ -226,10 +223,6 @@ h3 {
     position:absolute;
     padding-right: 18px;
     margin: -7% 0 -7% 0;
-}
-
-.labelbox2 h3 {
-    font-size: 1.5vw;
 }
 
 .project {
@@ -321,3 +314,259 @@ footer nav a:hover {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
 (NOTE: ALWAYS HAVE THIS SECTION LAST) */
 
+@media screen and (max-width: 850px) {
+    .primarysectiontitle {
+        flex:2;
+        font-size: 2vw;
+    }
+
+    .aboutsection img {
+        margin-top: 7%;
+    }
+
+    .aboutrightbuffer {
+        flex: 0.8;
+    }
+
+    .worktitle {
+        flex:6;
+        font-size: 3.0vw;
+       
+    }
+
+    h3 {
+        font-size: 2vw;  
+
+    }
+    
+    .codetype p {
+        font-size: 1.75vw;
+    }
+
+    .labelbox2 {
+        margin: -9% 0 -9% 0;
+    }
+}
+
+@media screen and (max-width: 748px) {
+
+    .navigation{
+        flex-wrap: wrap;
+    }
+
+    .aboutsection p {
+        padding: 50px 20px;
+    }
+
+    .worktitle {
+        flex:1;
+        font-size: 3.0vw;
+       
+    }
+
+    .mainproject img {
+        width: 100%;
+        height: 100%;
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+        border: var(--bordercolor);
+        border-radius: 30px;
+        position: relative; 
+    }
+
+    .minorproject img {
+    background-position: 80%;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    border: var(--bordercolor);
+    border-radius: 30px;
+    position: relative;
+}
+
+h3 {
+    font-size: 3vw;  
+
+}
+
+.codetype p {
+    font-size: 2vw;
+}
+
+.labelbox2 {
+    margin: -12% 0 -12% 0;
+}
+}
+
+@media screen and (max-width: 426px) {
+
+    .primarysectiontitle {
+        flex:2;
+        font-size: 3vw;
+        
+    }
+
+    .aboutsection p {
+        padding: 50px 20px;
+      
+    }
+
+    .aboutsection img {
+        margin-top: 7%;
+        margin-left: 110px;
+
+    }
+
+    .worktitle {
+        flex:1;
+        font-size: 5vw;
+        text-align: center;
+       
+    }
+
+    .mainproject {
+        justify-content: center;
+    }
+
+    .mainproject img {
+        width: 100%;
+        height: 100%;
+        min-width: 375px;
+        max-width: 375px;
+        min-height: 225px;
+        max-height: 225px;
+        border: var(--bordercolor);
+        border-radius: 30px;
+        position: relative; 
+    }
+    .project {
+        flex: 1;
+        padding: 5px;   
+    }
+
+    .workrightbuffer {
+        flex: 0 0 0;
+    } 
+
+
+    .minorproject img {
+        background-position: 80%;
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 200px;
+        max-height: 200px;
+        border: var(--bordercolor);
+        border-radius: 30px;
+        position: relative;
+    }
+
+
+    h3 {
+        font-size: 3vw;  
+
+    }
+
+    .codetype p {
+        font-size: 2vw;
+    }
+
+    .labelbox2 {
+        margin: -15% 0 -15% 0;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .primarysectiontitle {
+        flex:2;
+        font-size: 4vw;
+        margin: 15px;
+        
+    }
+
+    .aboutsection p {
+        padding: 50px 20px;
+      
+    }
+
+    .aboutsection img {
+        margin: 7% 0 7% 30%;
+
+    }
+
+    .worktitle {
+        flex:1;
+        font-size: 6vw;
+        text-align: center;
+       
+    }
+
+    .mainproject {
+        justify-content: center;
+    }
+
+    .mainproject img {
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 200px;
+        max-height: 200px;
+        border: var(--bordercolor);
+        border-radius: 30px;
+        position: relative; 
+    }
+    .project {
+        flex: 1;
+        padding: 5px;   
+    } 
+
+
+    .minorproject img {
+        background-position: 80%;
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 200px;
+        max-height: 200px;
+        border: var(--bordercolor);
+        border-radius: 30px;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .labelbox {
+        background-color: rgba(129, 118, 201, 0.75);
+        border-radius: 0 20px 20px 0;
+        position:absolute;
+        padding-right: 18px;
+        margin: -25% 0 -25% 0;
+    }
+
+
+    h3 {
+        font-size: 6vw;  
+
+    }
+
+    .codetype p {
+        font-size: 4vw;
+    }
+
+    .labelbox2 {
+        margin: -25% 0 -25% 0;
+    }
+
+    footer nav a {
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
