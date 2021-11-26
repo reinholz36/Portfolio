@@ -107,7 +107,10 @@ header nav a:hover {
 }
 
 .aboutsection p {
-    padding: 3%
+    text-indent: 10%;
+    word-spacing: 3px;
+    line-height: 28px;
+    padding: 4%
 }
 
 .aboutsection img {
@@ -140,8 +143,7 @@ header nav a:hover {
 }
 /* About Me section End */
 
-/* Work section Start */
- 
+/* Work section Start */ 
 .worktitle {
     flex:0.8;
     color:rgb(134, 99, 114);
@@ -215,7 +217,6 @@ h3 {
     border-radius: 30px;
     position: relative;
 }
-
 
 .labelbox2 {
     background-color: rgba(129, 118, 201, 0.75);
@@ -347,7 +348,7 @@ footer nav a:hover {
         margin: -9% 0 -9% 0;
     }
 }
-
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS Max-width 748px */
 @media screen and (max-width: 748px) {
 
     .navigation{
@@ -365,44 +366,33 @@ footer nav a:hover {
     }
 
     .mainproject img {
-        width: 100%;
-        height: 100%;
         min-width: 400px;
         max-width: 400px;
         min-height: 200px;
         max-height: 200px;
-        border: var(--bordercolor);
-        border-radius: 30px;
-        position: relative; 
     }
 
     .minorproject img {
-    background-position: 80%;
-    width: 100%;
-    height: 100%;
     min-width: 300px;
     max-width: 400px;
     min-height: 200px;
     max-height: 200px;
-    border: var(--bordercolor);
-    border-radius: 30px;
-    position: relative;
-}
+    }
 
-h3 {
-    font-size: 3vw;  
+    h3 {
+        font-size: 4vw;  
 
-}
+    }
 
-.codetype p {
-    font-size: 2vw;
-}
+    .codetype p {
+        font-size: 3vw;
+    }
 
-.labelbox2 {
-    margin: -12% 0 -12% 0;
+    .labelbox2 {
+        margin: -12% 0 -12% 0;
+    }
 }
-}
-
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS Max-width 426px */
 @media screen and (max-width: 426px) {
 
     .primarysectiontitle {
@@ -434,15 +424,10 @@ h3 {
     }
 
     .mainproject img {
-        width: 100%;
-        height: 100%;
         min-width: 375px;
         max-width: 375px;
         min-height: 225px;
         max-height: 225px;
-        border: var(--bordercolor);
-        border-radius: 30px;
-        position: relative; 
     }
     .project {
         flex: 1;
@@ -453,35 +438,31 @@ h3 {
         flex: 0 0 0;
     } 
 
-
     .minorproject img {
-        background-position: 80%;
-        width: 100%;
-        height: 100%;
         min-width: 300px;
         max-width: 300px;
         min-height: 200px;
         max-height: 200px;
-        border: var(--bordercolor);
-        border-radius: 30px;
-        position: relative;
     }
 
-
     h3 {
-        font-size: 3vw;  
+        font-size: 4vw;  
 
+    }
+
+    .labelbox {
+        margin: -25% 0 -25% 0;
     }
 
     .codetype p {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .labelbox2 {
         margin: -15% 0 -15% 0;
     }
 }
-
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS Max-width 376px */
 @media screen and (max-width: 376px){
     .primarysectiontitle {
         flex:2;
@@ -496,7 +477,7 @@ h3 {
     }
 
     .aboutsection img {
-        margin: 7% 0 7% 30%;
+        margin: 7% 0 7% 45%;
 
     }
 
@@ -512,44 +493,29 @@ h3 {
     }
 
     .mainproject img {
-        width: 100%;
-        height: 100%;
         min-width: 300px;
         max-width: 300px;
         min-height: 200px;
         max-height: 200px;
-        border: var(--bordercolor);
-        border-radius: 30px;
-        position: relative; 
+     
     }
+
     .project {
         flex: 1;
         padding: 5px;   
     } 
 
-
     .minorproject img {
-        background-position: 80%;
-        width: 100%;
-        height: 100%;
         min-width: 300px;
         max-width: 300px;
         min-height: 200px;
         max-height: 200px;
-        border: var(--bordercolor);
-        border-radius: 30px;
-        position: relative;
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     .labelbox {
-        background-color: rgba(129, 118, 201, 0.75);
-        border-radius: 0 20px 20px 0;
-        position:absolute;
-        padding-right: 18px;
-        margin: -25% 0 -25% 0;
+        margin: -25% 0 -25% 0px;
     }
-
 
     h3 {
         font-size: 6vw;  
