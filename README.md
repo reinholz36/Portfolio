@@ -7,7 +7,7 @@ I built a portfolio using advanced CSS techniques  to showcase my current and up
 View live site at: https://reinholz36.github.io/Portfolio/
 
 <a href="https://reinholz36.github.io/Portfolio/">
-<img src="./assets/images/Dani's-Portfolio.jpg" alt="Portfolio header with Reinholz and menu display">
+<img src="./assets/images/riverwood.jpg" alt="Portfolio header with Riverwood and menu display">
 </a>
  
 ## Technologies used: 
